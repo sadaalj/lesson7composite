@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu-lates
     steps:
       - uses: actions/chechout@v4
-      - uses: ./ # this meaning using the root level of our repository and search for action file
-        id: compositAction # add an id for this step
+      - uses: ./
+        id: compositAction 
         with:
           number1: 4
           number2: 2
