@@ -20,5 +20,5 @@ runs:
       run: |
         num1=${{ inputs.number1 }}
         num2=${{ inputs.number2 }}
-        result=$((num1+num2 ))
-        echo "result=$result" >> "GItHUB_OUTPUT"
+        result=$((num1+num2))
+        echo "result=$result" >> "$GItHUB_OUTPUT"
