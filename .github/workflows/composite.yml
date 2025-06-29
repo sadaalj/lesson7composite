@@ -4,13 +4,13 @@ on:
   push:
 
 jobs:
-  composite action:
+  composite-action:
     name: job to test a composite action
     runs-on: ubuntu-lates
     steps:
       - uses: actions/chechout@v4
       - uses: ./ # this meaning using the root level of our repository and search for action file
-        id: compositAction #add an id for this step
+        id: compositAction # add an id for this step
         with:
           number1: 4
           number2: 2
